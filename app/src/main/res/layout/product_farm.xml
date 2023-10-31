@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingEnd="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+        <ImageView
+            android:id="@+id/imgbo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/rectangle95"></ImageView>
+
+        <ImageView
+            android:id="@+id/imgchu"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="-26dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/quangon" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/priceNew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="14dp"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text="20,000"/>
+            <TextView
+                android:id="@+id/priceOld"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30,000"
+                android:textSize="14sp"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/namebo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Bơ Lâm Đồng"/>
+        <TextView
+            android:id="@+id/kg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="1kg"/>
+    </LinearLayout>
+
+
+</LinearLayout>

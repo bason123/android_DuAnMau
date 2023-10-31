@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:translationZ="8dp"
+        android:layout_height="0dp"
+        app:cardElevation="0dp">
+
+        <ImageView
+            android:id="@+id/ShopBackHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="12dp"
+            android:src="@drawable/arrow"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bún thịt nướng - Cơm tấm Cô Tín"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/textColor"
+                android:layout_marginStart="26dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Khoảng cách tới chỗ bạn:  2,4 km (25 phút)"
+                android:textSize="12sp"
+                android:textFontWeight="500"
+                android:textColor="@color/textColor"
+                android:layout_marginStart="20dp"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    
+    <ScrollView
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:background="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="113dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Giao Hàng"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/textColor"/>
+
+                <LinearLayout
+                    android:layout_marginBottom="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_location"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="17dp"/>
+                    <LinearLayout
+                        android:layout_marginStart="17dp"
+                        android:layout_marginTop="14dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Moda’s House Coffee"
+                            android:textColor="@color/textColor"
+                            android:textSize="12sp"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="263/90 Tô Ký, P.Trung Mỹ Tây, Q.12, HCM"
+                            android:textColor="@color/textColor"
+                            android:textSize="10sp"
+                            android:layout_marginTop="12dp"
+                            android:textFontWeight="500"/>
+
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_marginLeft="22dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_come_in"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:background="#FFD9D9D9"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="12dp">
+
+                    <LinearLayout
+                        android:layout_marginTop="17dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="14dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tóm tắt đơn hàng"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:textColor="@color/textColor"/>
+                        <TextView
+                            android:id="@+id/themMon"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#FF2707EB"
+                            android:textAlignment="textEnd"
+                            android:textSize="12sp"
+                            android:text="Thêm món"
+                            android:textFontWeight="500"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:background="@color/white"
+                    android:id="@+id/rcViewListDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingTop="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tổng tạm tính"
+                            android:textSize="12sp"
+                            android:textFontWeight="500"
+                            android:textColor="@color/textColor"
+                            android:layout_marginStart="20dp"/>
+                        <TextView
+                            android:id="@+id/totalTamTinh"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="textEnd"
+                            android:text="79,000 đ"
+                            android:textColor="@color/textColor"
+                            android:textSize="10sp"
+                            android:textFontWeight="500"
+                            android:layout_marginEnd="11dp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginBottom="28dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Phí áp dụng (dưới 5km)"
+                            android:textSize="12sp"
+                            android:textFontWeight="500"
+                            android:textColor="@color/textColor"
+                            android:layout_marginStart="20dp"/>
+                        <TextView
+                            android:id="@+id/giamGia"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="textEnd"
+                            android:text="16000"
+                            android:textColor="@color/textColor"
+                            android:textSize="10sp"
+                            android:textFontWeight="500"
+                            android:layout_marginEnd="11dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            
+
+
+        </LinearLayout>
+
+        
+    </ScrollView>
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_layout_payment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tổng cộng"
+                android:textColor="@color/textColor"
+                android:textSize="16sp"
+                android:textFontWeight="500"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="14dp"/>
+            <TextView
+                android:id="@+id/tongHoaDon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/textColor"
+                android:textSize="16sp"
+                android:textFontWeight="500"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="14dp"
+                android:textAlignment="textEnd"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/datDon"
+            android:layout_width="193dp"
+            android:layout_height="38dp"
+            android:background="@drawable/layout_button_green"
+            android:layout_gravity="center"
+            android:text="Đặt đơn"
+            android:textAlignment="center"
+            android:paddingTop="7dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
